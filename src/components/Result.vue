@@ -5,7 +5,7 @@
   >
     <div class="flex items-center justify-between">
       <div class="">
-        <h1 class="font-bold text-4xl">{{ word.word }}</h1>
+        <h1 class="font-bold text-3xl">{{ word.word }}</h1>
         <p class="italic text-purple-500">{{ word.phonetic }}</p>
       </div>
       <div class="">
@@ -25,11 +25,11 @@
     </div>
     <div class="nouns" v-for="(item, i) in word.meanings" :key="i">
       <div class="my-10 flex items-center gap-4">
-        <h3 class="font-bold text-4xl italic">{{ item.partOfSpeech }}</h3>
+        <h3 class="font-bold text-3xl italic">{{ item.partOfSpeech }}</h3>
         <div class="w-full border border-1 items-center"></div>
       </div>
       <div class="font-medium">
-        <h2 class="text-2xl text-slate-500 mb-5">Meaning</h2>
+        <h2 class="text-xl text-slate-500 mb-5">Meaning</h2>
         <ul
           class="marker:text-purple-500 px-5 list-disc pl-12"
           v-for="(def, i) in item.definitions"
@@ -46,10 +46,10 @@
         </ul>
       </div>
       <div class="font-medium md:flex items-center gap-6 mt-8">
-        <h2 class="text-2xl text-slate-500">Synonyms</h2>
+        <h2 class="text-xl text-slate-500">Synonyms</h2>
         <div class="">
           <span
-            class="text-purple-800 font-bold text-xl inline-block mx-3"
+            class="text-purple-800 font-bold text-lg inline-block mx-3"
             v-for="(syn, i) in item.synonyms"
             :key="i"
           >

@@ -38,6 +38,7 @@ export default {
       );
       const data = await res.json();
       [this.fetchData] = data;
+
       return this.fetchData;
     },
   },

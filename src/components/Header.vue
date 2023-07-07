@@ -23,7 +23,10 @@
         ></label>
       </div>
 
-      <div class=""><i class="bx bx-moon text-2xl"></i></div>
+      <div class="">
+        <i v-if="isChecked" class="bx bxs-moon text-2xl"></i>
+        <i v-else class="bx bx-moon text-2xl"></i>
+      </div>
     </div>
   </div>
 </template>
