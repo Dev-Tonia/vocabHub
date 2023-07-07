@@ -45,11 +45,11 @@
           </li>
         </ul>
       </div>
-      <div class="font-medium flex items-center gap-6 mt-8">
+      <div class="font-medium md:flex items-center gap-6 mt-8">
         <h2 class="text-2xl text-slate-500">Synonyms</h2>
         <div class="">
           <span
-            class="text-purple-800 font-bold text-2xl inline-block mx-3"
+            class="text-purple-800 font-bold text-xl inline-block mx-3"
             v-for="(syn, i) in item.synonyms"
             :key="i"
           >
@@ -59,7 +59,7 @@
       </div>
     </div>
     <hr class="text-slate-500 mt-4" />
-    <div class="font-medium flex items-center gap-6 mt-4">
+    <div class="font-medium md:flex items-center gap-6 mt-4">
       <p class="text-slate-500">source</p>
       <a :href="word.sourceUrls[0]" target="_blank" class="underline">{{
         word.sourceUrls[0]

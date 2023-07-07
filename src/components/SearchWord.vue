@@ -3,8 +3,9 @@
     class="bg-gray-200 dark:bg-gray-700 flex items-center py-2 rounded-xl px-3 mt-5"
   >
     <input
-      type="text"
+      type="search"
       v-model="text"
+      @keyup.enter="getData(text)"
       placeholder="Search Word"
       class="bg-transparent border-none text-gray-800 dark:text-gray-300 font-bold outline-none w-full"
     />
